@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>D'Panes Andinos</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header> <!--Sección 1: Barra de navegación y Galería de Imágenes-->
+            <div class="barraNavegacion">
+                <nav> <!--Links de la Barra de Navegación-->
+                    <!--Logo de la Marca, tamaño ajustado-->
+                    <ul>
+                        <li><img src="Img/recortado.png" id="logoNav"></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="quienes_somos.html">¿Quienes somos?</a></li>
+                        <li><a href="variedades.html">Variedades</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="imageSlider">
+                <li><img src="Img/local_1.jpg" class ="landingImage" alt="Local"></li>
+                <li class="imageSlider__text">El verdadero sabor del Pan Andino</li>
+                <li class="imageSlider__text--sub">Al mejor precio de Buenos Aires</li>
+            </ul>
+        </header>
+        <main>
+            <section class="contenedorLanding"> <!-- Sección 2: Productos-->
+                <div class="contenedorLanding__boxIzquierdo"> <!--Lado izq: Logo y mensaje-->
+                    <img class="contenedorLanding__boxIzquierdo--imagen" src="Img/blanco.png" alt="Logo blanco">
+                    <h2 class="contenedorLanding__boxIzquierdo--texto">Pregunta por cualquiera de nuestras deliciosas <a href="variedades.html" id="linkBox">variedades</a>!</h2>
+                </div>
+                <div class="contenedorLanding__boxDerecho"> <!--Lado derecho: Variedades de pan destacadas--> 
+                    <img src="Img/leche.jpeg" alt="Pan 1" class= "contenedorLanding__boxDerecho--elementoGaleria">
+                    <img src="Img/tovareno.jpeg" alt="Pan 2" class= "contenedorLanding__boxDerecho--elementoGaleria">
+                    <img src="Img/clineja.jpeg" alt="Pan 3" class= "contenedorLanding__boxDerecho--elementoGaleria">
+                    <img src="Img/otras.jpeg" alt="Pan 4" class= "contenedorLanding__boxDerecho--elementoGaleria">
+                    <img src="Img/pinita.jpeg" alt="Pan 5" class= "contenedorLanding__boxDerecho--elementoGaleria">
+                    <img src="Img/relleno.jpeg" alt="Pan 6" class= "contenedorLanding__boxDerecho--elementoGaleria">
+                </div>
+            </section>
+            <section class="mediosInteraccion"> <!-- Sección 3: Medios de interacción Física y Digital-->
+            <div class="mediosInteraccion__side"> <!--Lado izquierdo: Mapa e información sobre delivery-->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.330240511831!2d-58.38690988518161!3d-34.5958098804615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab9b43a6983%3A0x25aad93073e57eca!2sSanta%20F%C3%A9%201234%20s.a!5e0!3m2!1ses!2sar!4v1615406314676!5m2!1ses!2sar"
+                    width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="ubicacion">
+                    <h4>Estamos ubicados en Avenida Santa Fe 1234 <p>1425, Ciudad Autónoma de Buenos Aires<p>Pero nuestro corazón está en <a href="https://es.wikipedia.org/wiki/M%C3%A9rida_(Venezuela)" id="merida">Mérida, Venezuela</a> <tag id="corazon"><3</tag> </H4>
+                </div>
+            </div>
+            <div class="mediosInteraccion__side"><!-- Lado derecho: Módulo Correo-->
+                <a alt="Módulo Correo"></a>
+            </div>
+            </section>
+        </main>
+        <footer><!-- Footer: Links a otras partes del sitio y a Redes-->
+            <div> <!-- Lado izquierdo: Mensaje destacado -- Cambia mensualmente -->
+                <h2>Aprovecha las ofertas de Don Pedro Pan!</h2>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes_somos.html">¿Quienes somos?</a></li>
+                    <li><a href="variedades.html">Variedades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div> <!-- Lado derecho: Redes Sociales -->
+                <h2>Seguinos en nuestras redes y enterate de las novedades!</h2>
+            </div>
+            <div>
+                <ul>
+                    <li><img src="Img/twitter.png"></img></li>
+                    <li><img src="Img/twitter.png"></img></li>
+                    <li><img src="Img/twitter.png"></img></li>
+                    <li><img src="Img/twitter.png"></img></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

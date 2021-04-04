@@ -1,0 +1,426 @@
+/** :root se refiere a la base de la página. La idea de este es aplicar 
+un font a toda la página. 
+Nota: El font usado en esta entrega no necesariamente será el final**/
+:root{
+    font-family: 'Shippori Mincho B1', serif; 
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+nav ul{
+    margin-bottom: 0px;
+    margin-top:0px; 
+    height: 100px;   
+    background-color: orange;
+    display: flex;
+    align-items: center;
+}
+
+/** nav para ir a la barra de navegción, ul para las listas no ordenadas dentro 
+y li para cada iteración, al que le cambié el tamaño del font. **/
+nav ul li{  
+    font-size: large;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: static;
+    text-decoration: none;
+    text-decoration-color: red;;
+    color:#5f4425;
+}
+
+nav ul li a:hover{
+    /**background-color: #660000;**/
+    /**border-radius: 15px;**/
+    color: white;
+    /**border-style: solid;**/
+    /**border-color: #660000;**/
+    /**border-width: 5px;**/
+    transition-duration: .25s;
+    /**font-size: x-large;**/
+}
+
+/** footer para afectar todos los footers y mantengan un mismo diseño.
+Por ahora va a ser simples cambios en el color mientras llegamos a trabajar
+con ubicaciones **/
+
+/** li para todas las iteraciones de todas las listas en los sitios
+eliminando los estilos, en específico los circulos de iteración **/
+li {
+    list-style-type: none;
+}
+
+/** table para estilizar con color y bordes la tabla en el sitio.
+No estoy muy de acuerdo en el uso de tablas, pero como lo exige el desafío
+tampoco lo voy a ignorar. Si es posible para el sitio final esta parte será ignorada **/
+table{
+    border: 5px solid;
+    border-color: black;
+    background-color: #660000;
+    color: white;
+}
+
+/** tr, td para estilizar los datos dentro de la tabla con colores y bordes.
+También alineo el texto al centro.**/
+tr, td{
+    border: 5px solid;
+    border-color: black;
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+
+/** para estilizar los headers de la tabla. De igual manera con color y bordes **/
+th{
+    border: 5px solid;
+    border-color: black;
+    background-color: #660000;
+    color: white;
+}
+
+/** Clases **/
+
+/**  clase textoLargo: es para los textos que no son de una sola línea.
+En este caso sólo edité el tamaño y el grueso del font**/
+.textoLargo{
+    font-weight: 100;
+    font-size: small;
+    background-color: #e68c24;
+    color: #44301a;
+}
+
+#quienes_somos{
+    background-color: #e68c24;
+}
+
+/**  clase mensajeDestacado: es para los textos que quiero que 
+se destaque entre el resto del texto a través del color y disposición 
+de la página dentro de la paleta usada**/
+.mensajeDestacado{
+    color: orange;
+    background-color: #660000;
+    margin-top:0px;
+    margin-bottom: 20px;
+    height: 50px;
+    font-size: 26px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.mensajeDestacado__final{
+    color: orange;
+    background-color: #660000;
+    height: 200px;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.mensajeDestacado__contacto{
+    text-align: center;
+}
+
+#whatsapp{
+    background-color: #660000;
+    color: #e68c24;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: x-large;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#pregunta{
+    background-color: #660000;
+    color: #e68c24;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: x-large;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/**  clase mail: es para el cuadro que contiene el módulo de envío de
+correos de contacto. Por ahora sólo con colores de fondo y color del font
+adaptado a un fondo oscuro**/
+.mail{
+    background-color: #660000;
+    color: white;
+    width:600px;
+}
+
+.inputs{
+    width: 500px;
+}
+
+/**  clase botones: es para los botones dentro del sitio
+en este caso además del color jugué con el radio del botón
+para hacerlo redondeado**/
+.botones{
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 100px;
+}
+
+.landingImage{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    position:relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.imageSlider{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    text-align: center;
+    color: #660000;
+    font-size: 50px;
+}
+
+.imageSlider__text{
+    position: absolute;
+    top:30%;
+    right:5%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 10px 0 10px;
+    animation-name: aparicion;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    z-index: 99999;
+}
+
+body{
+    margin: 0px 0px 0px 0px;
+}
+
+.mediosInteraccion{
+    margin: 0px 15px 15px 15px;
+    background-color: rgba(0,0,0,.24);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 10px 5px rgba(red, green, blue, .24);
+    width:41%;
+}
+
+.mediosInteraccion__side{
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+iframe{
+    border-radius: 40px;
+    padding: 25px 25px 0px 25px;
+}
+
+nav{
+    width: 100%;
+}
+
+#logoNav{
+    height:100px; 
+    width:120px;
+    padding-right: 15px;
+
+}
+
+footer{
+    margin: 0px 0px 0px 0px;
+    background: #660000;
+    font-weight: lighter;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 20% 30%;
+    width: 100%;
+    color: white;
+    justify-content: space-around;
+}
+
+footer div ul li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer div ul li img{
+    height: 70px;
+    width: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fotosVariedades{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    row-gap: 10px;
+    font-size: medium;
+    margin-bottom: 20px;
+    background-color: #e68c24;
+    margin-left: -10px;
+    margin-top: -20px;
+    margin-bottom:0px;
+    text-align: justify;
+}
+
+.fotosVariedades h2{
+    color: #660000;
+    text-align: center;
+    font-style:italic;
+}
+
+.fotosVariedades__item{
+    margin: 20px 50px 20px 50px;
+    color: white;
+}
+
+#variedad{
+    height: 350px;
+    width: 250px;
+    border-radius: 40px;
+    margin-left:59px;
+}
+
+.fotosHistoria{
+    max-width: 780px;
+    max-height: 400px;
+
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+.ubicacion{
+    color:rgb(59, 58, 58);
+}
+
+@keyframes aparicion{
+    0% {opacity: 0;}
+    100%{opacity: 1;} 
+}
+
+.contenedorLanding{
+    display: flex;
+    flex-wrap: wrap; /**por si luego quiero añadir algún otro box**/
+    height: 100%;
+    width: 98%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.contenedorLanding__boxIzquierdo{
+    order: -1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    justify-content: center;
+    width: 100vh;
+}
+
+.contenedorLanding__boxDerecho{
+    order: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 170px);
+    grid-template-rows: repeat(2, 195px);
+    column-gap: 30px;
+    row-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 40px 40px 40px;
+}
+
+.contenedorLanding__boxDerecho--elementoGaleria{
+    width: 170px;
+    height: 195px;
+    border-radius: 20%;
+}
+
+.contenedorLanding__boxIzquierdo--texto{
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+.contenedorLanding__boxIzquierdo--imagen{
+    padding-left: 12.5%;
+    height:335px; 
+    width:75%;
+}
+
+#linkBox{
+    color:orange;
+}
+
+.imageSlider__text--sub{
+    position: absolute;
+    color: #5f4425;
+    top:40%;
+    right:8%;
+    background-color: rgba(255,165,0, 0.9);
+    padding: 0 10px 0 10px;
+    animation-name: aparicion;
+    animation-duration: 5s;
+    animation-delay: .5s;
+    z-index: 1;
+}
+
+#merida{
+    color: blue;
+}
+
+#corazon{
+    color: red;
+}
+
+.historiaInicio{
+    display:grid;
+    grid-template-rows: 400px;
+    grid-template-columns: 400px 800px;
+    grid-column-gap: 45px;
+    margin-left: 1rem;
+    margin-bottom: auto;
+    overflow:hidden;
+    background-color: #e68c24;
+}
+
+.historiaFinal{
+    display:grid;
+    grid-template-rows: 400px;
+    grid-template-columns: 800px 400px;
+    grid-column-gap: 45px;
+    margin-left:1rem;
+    margin-bottom: 20px;
+    background-color: #e68c24;
+}
+
+#montanias{
+    height: 500px;
+    width:100%;
+    margin: 30px 0px 30px 0px;
+}
+
+.contenedor_contacto{
+    display: flex;
+    flex-direction: row;
+    background-color: #e68c24;
+    color:#44301a;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.faq{
+    background-color: #e68c24;
+    color:#44301a;
+    margin-top: 0px;
+}
